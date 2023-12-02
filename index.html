@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="./assets/imgs/favicon.png" type="image/x-icon">
     <title>Projeto Final - Módulo JavaScript</title>
   </head>
@@ -46,12 +47,13 @@
             <input class="inputCalc" id="numero2Div" type="number" required />
             <button class="buttonCalc" onclick="dividir()">DIVIDIR</button>
             <p class="resultado">Resultado: <b id="resultadoDiv"></b></p>
+
+            <button class="buttonReset" onclick="limparDadosCalculadora()"><i class="fa-solid fa-trash-can"></i></button>
         </section>
 
         <section id="projeto2">
-          <h2>Calculadora de Médias</h2>
-
           <div id="contentCalcMedias">
+            <h2>Calculadora de Médias</h2>
             <div id="notas">
               <div class="nota">
                 <label for="nota1">Nota 1</label>
@@ -72,13 +74,14 @@
                 <label for="nota4">Nota 4</label>
                 <input class="inputNota" id="nota4" type="number" required />
               </div>
-            </div>
+            </div>       
+              <button id="btnSituacao" onclick="calcularMedia()">
+                Qual a situação da estudante?
+              </button>
 
-            <button id="btnSituacao" onclick="calcularMedia()">
-              Qual a situação da estudante?
-            </button>
-
-            <p id="situacaoAluno"></p>
+              <p id="situacaoAluno"></p>
+  
+              <button class="buttonReset" onclick="limparDadosMedia()"><i class="fa-solid fa-trash-can"></i></button>              
           </div>
         </section>
       </div>

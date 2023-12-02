@@ -54,3 +54,12 @@ function calcularMedia() {
   // evite mexer na linha de código abaixo!
   document.getElementById("situacaoAluno").innerHTML = mensagem;
 }
+
+function limparDadosMedia() {
+  document.getElementById('nota1').value = '';
+  document.getElementById('nota2').value = '';
+  document.getElementById('nota3').value = '';
+  document.getElementById('nota4').value = '';
+  document.getElementById('situacaoAluno').textContent = '';
+}
+

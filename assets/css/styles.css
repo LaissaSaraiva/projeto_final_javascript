@@ -30,7 +30,7 @@ color: #68405a;
 }
 
 main {
-margin: 40px;
+margin: 40px 40px 0;
 }
 
 p {
@@ -63,7 +63,8 @@ button:hover {
 }
 #projeto1, #projeto2 {
 padding: 10px 20px;
-line-height: auto
+line-height: auto;
+position: relative;
 }
 
 #formulario {
@@ -109,6 +110,17 @@ outline-color: #d984a2;
 
 .buttonCalc {
 width: 110px;
+}
+
+.buttonReset {
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
 }
 
 .resultado {

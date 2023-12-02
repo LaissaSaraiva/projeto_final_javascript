@@ -60,3 +60,21 @@ function dividir() {
     }   
     document.getElementById("resultadoDiv").innerHTML = resultado;
 }
+
+function limparDadosCalculadora() {
+    document.getElementById('numero1Soma').value = '';
+    document.getElementById('numero2Soma').value = '';
+    document.getElementById('resultadoSoma').textContent = '';
+
+    document.getElementById('numero1Sub').value = '';
+    document.getElementById('numero2Sub').value = '';
+    document.getElementById('resultadoSub').textContent = '';
+
+    document.getElementById('numero1Mult').value = '';
+    document.getElementById('numero2Mult').value = '';
+    document.getElementById('resultadoMult').textContent = '';
+
+    document.getElementById('numero1Div').value = '';
+    document.getElementById('numero2Div').value = '';
+    document.getElementById('resultadoDiv').textContent = '';
+}
