@@ -110,6 +110,7 @@ button:hover {
     height: 30px;
     border: none;
     outline-color: #d984a2;
+    text-align: center;
 }
 
 .buttonCalc {
@@ -136,6 +137,7 @@ button:hover {
     height: 36px;
     border: none;
     outline-color: #d984a2;
+    text-align: center;
 }
 
 .footer div {
@@ -187,6 +189,10 @@ button:hover {
 
     section {
         width: initial;
+    }
+
+    p#situacaoAluno {
+        margin-bottom: 35px;
     }
 }
 
