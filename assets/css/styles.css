@@ -20,11 +20,13 @@ body {
 
 h1 {
 text-align: center;
+color: #68405a;
 }
 
 h2 {
 margin: 0;
 margin-bottom: 15px;
+color: #68405a;
 }
 
 main {
@@ -33,10 +35,12 @@ margin: 40px;
 
 p {
 text-align: "left";
+color: #4a2c42;
 }
 
 .project-description {
     text-align: center;
+
 }
 
 section {
@@ -49,11 +53,13 @@ button {
 height: 36px;
 border: none;
 border-radius: 5px;
+color: #4a2c42;
+
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #ece7e7;
+    background-color: #e2a9c3;
 
 }
 #projeto1, #projeto2 {
@@ -117,9 +123,31 @@ border: none;
 outline-color: #d984a2;
 }
 
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.footer .footer-description {
+    text-align: center;
+    font-size: 12px;
+    color: #4a2c42;
+}
+
+.footer a {
+    color: #68405a;
+    font-weight: 900;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
 /* Mobile */
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     main {
         margin-left: 20px;
         margin-right: 20px;
@@ -129,6 +157,14 @@ outline-color: #d984a2;
         flex-direction: column;
     }
 
+    #projeto1, #projeto2 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .inputCalc, .inputNota  {
+        width: 60px;
+    }
     section {
         width: initial;
     }
