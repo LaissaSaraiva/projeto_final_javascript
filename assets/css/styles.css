@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
 
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     background-color: #F5F5F5;
     color: #555;
@@ -9,6 +13,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     line-height: 30px;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    
 }
 
 h1 {
@@ -28,17 +35,27 @@ p {
 text-align: "left";
 }
 
+.project-description {
+    text-align: center;
+}
+
 section {
-border: thick double #32a1ce;;
+border: thick double #d984a2;;
 margin-bottom: 30px;
 width: 50%;
 }
 
 button {
 height: 36px;
-
+border: none;
+border-radius: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #ece7e7;
+
+}
 #projeto1, #projeto2 {
 padding: 10px 20px;
 line-height: auto
@@ -81,6 +98,8 @@ flex-direction: column;
 .inputCalc {
 width: 110px;
 height: 30px;
+border: none;
+outline-color: #d984a2;
 }
 
 .buttonCalc {
@@ -94,4 +113,29 @@ margin-top: 0;
 .inputNota{
 width: 80px;
 height: 36px;
+border: none;
+outline-color: #d984a2;
 }
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+
+    section {
+        width: initial;
+    }
+}
+
+/* .color1 {color: #4a2c42;}
+.color2 {color: #68405a;}
+.color3 {color: #995c78;}
+.color4 {color: #d984a2;}
+.color5 {color: #e2a9c3;} */
