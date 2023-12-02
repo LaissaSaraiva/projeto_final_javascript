@@ -4,7 +4,7 @@ function somar() {
     // evite mexer no código acima!
   
     //escreva seu código aqui
-  
+    resultado = numero1 + numero2;
     /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
     Em seguida, ao invés de mostrar o numero 10, mostre o resultado da operação */
     document.getElementById("resultadoSoma").innerHTML = resultado;
@@ -16,6 +16,7 @@ function subtrair() {
     // evite mexer no código acima!
 
     //escreva seu código aqui
+    resultado = numero1 - numero2;
 
     /* use as constantes numero 1 e numero 2 e realize a subtração entre elas.
         Em seguida, ao invés de mostrar o numero 9, mostre o resultado da operação */
@@ -28,7 +29,7 @@ function multiplicar() {
     // evite mexer no código acima!
 
     //escreva seu código aqui
-
+    resultado = numero1 * numero2;
     /* use as constantes numero 1 e numero 2 e realize a multiplicação entre elas.
         Em seguida, ao invés de mostrar o numero 5, mostre o resultado da operação */
     document.getElementById("resultadoMult").innerHTML = resultado;
@@ -40,6 +41,7 @@ function dividir() {
     // evite mexer no código acima!
 
     //escreva seu código aqui
+    resultado = numero1 / numero2;
 
     /* use as constantes numero 1 e numero 2 e realize a divisão entre elas.
         Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
