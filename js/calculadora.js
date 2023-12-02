@@ -2,12 +2,15 @@ function somar() {
     const numero1 = parseFloat(document.getElementById("numero1Soma").value);
     const numero2 = parseFloat(document.getElementById("numero2Soma").value);
     // evite mexer no código acima!
-  
-    //escreva seu código aqui
+    //escreva seu código aqui  
     resultado = numero1 + numero2;
     /* use as constantes numero 1 e numero 2 e realize a soma entre elas.
     Em seguida, ao invés de mostrar o numero 10, mostre o resultado da operação */
-    document.getElementById("resultadoSoma").innerHTML = resultado;
+
+    if (isNaN(resultado)) {
+        resultado = `Informe dois números válidos.`
+    }     
+    document.getElementById("resultadoSoma").innerHTML = resultado;  
 }
 
 function subtrair() {
@@ -20,6 +23,9 @@ function subtrair() {
 
     /* use as constantes numero 1 e numero 2 e realize a subtração entre elas.
         Em seguida, ao invés de mostrar o numero 9, mostre o resultado da operação */
+    if (isNaN(resultado)) {
+        resultado = `Informe dois números válidos.`
+    }   
     document.getElementById("resultadoSub").innerHTML = resultado;
 }
 
@@ -32,6 +38,10 @@ function multiplicar() {
     resultado = numero1 * numero2;
     /* use as constantes numero 1 e numero 2 e realize a multiplicação entre elas.
         Em seguida, ao invés de mostrar o numero 5, mostre o resultado da operação */
+    
+    if (isNaN(resultado)) {
+        resultado = `Informe dois números válidos.`
+    }   
     document.getElementById("resultadoMult").innerHTML = resultado;
 }
 
@@ -44,6 +54,9 @@ function dividir() {
     resultado = numero1 / numero2;
 
     /* use as constantes numero 1 e numero 2 e realize a divisão entre elas.
-        Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */
+    Em seguida, ao invés de mostrar o numero -89, mostre o resultado da operação */ 
+    if (isNaN(resultado)) {
+        resultado = `Informe dois números válidos.`
+    }   
     document.getElementById("resultadoDiv").innerHTML = resultado;
 }
