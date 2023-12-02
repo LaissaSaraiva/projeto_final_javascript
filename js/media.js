@@ -12,7 +12,7 @@
       "Hoje é seu aniversário? Pq você ta de parabéns! 10 de média"
 */
 function alteraCorDoTexto(cor) {
-  return document.getElementById("situacaoAluno").style.color = cor;
+  return (document.getElementById("situacaoAluno").style.color = cor);
 }
 
 function calcularMedia() {
@@ -26,29 +26,29 @@ function calcularMedia() {
   // evite mexer no código acima!
 
   if (media === 0) {
-    alteraCorDoTexto('red');
+    alteraCorDoTexto("red");
     mensagem = `Infelizmente você zerou a prova :( `;
   } else if (media > 0 && media <= 3) {
-    alteraCorDoTexto('red');
+    alteraCorDoTexto("red");
     mensagem = `Caramba, deu ruim, você obteve média ${media}! <br> Estude mais e tente novamente.`;
   } else if (media > 3.1 && media < 6) {
-    alteraCorDoTexto('red');
+    alteraCorDoTexto("red");
     mensagem = `Você obteve média ${media}! <br> Falta pouco para a média.`;
   } else if (media >= 6 && media <= 7) {
-    alteraCorDoTexto('blue');
+    alteraCorDoTexto("blue");
     mensagem = `Você está na média com ${media}.`;
   } else if (media > 7 && media < 10) {
-    alteraCorDoTexto('green');
+    alteraCorDoTexto("green");
     mensagem = `Notão! Sua média é ${media}!`;
   } else if (media === 10) {
-    alteraCorDoTexto('green');
+    alteraCorDoTexto("green");
     mensagem = `Hoje é seu aniversário? <br> Pq você está de parabéns! ${media} de média.`;
   } else if (media > 10) {
-    alteraCorDoTexto('red');
+    alteraCorDoTexto("red");
     mensagem = `Ops! Sua média ${media} está acima da média máxima: 10. <br> Verifique se você digitou as notas corretamente.`;
   } else {
-    alteraCorDoTexto('#4a2c42');
-    mensagem = `Vamos começar? <br> Insira suas notas para calcularmos a sua média!`
+    alteraCorDoTexto("#4a2c42");
+    mensagem = `Vamos começar? <br> Insira suas notas para calcularmos a sua média!`;
   }
 
   // evite mexer na linha de código abaixo!
@@ -56,10 +56,9 @@ function calcularMedia() {
 }
 
 function limparDadosMedia() {
-  document.getElementById('nota1').value = '';
-  document.getElementById('nota2').value = '';
-  document.getElementById('nota3').value = '';
-  document.getElementById('nota4').value = '';
-  document.getElementById('situacaoAluno').textContent = '';
+  document.getElementById("nota1").value = "";
+  document.getElementById("nota2").value = "";
+  document.getElementById("nota3").value = "";
+  document.getElementById("nota4").value = "";
+  document.getElementById("situacaoAluno").textContent = "";
 }
-

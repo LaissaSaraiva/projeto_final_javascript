@@ -15,101 +15,105 @@ body {
     line-height: 30px;
     background-color: #FAACA8;
     background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-    
+
 }
 
 h1 {
-text-align: center;
-color: #68405a;
+    text-align: center;
+    color: #68405a;
 }
 
 h2 {
-margin: 0;
-margin-bottom: 15px;
-color: #68405a;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #68405a;
 }
 
 main {
-margin: 40px 40px 0;
+    margin: 40px 40px 0;
 }
 
 p {
-text-align: "left";
-color: #4a2c42;
+    text-align: "left";
+    color: #4a2c42;
 }
 
-p#situacaoAluno, .project-description {
+p#situacaoAluno,
+.project-description {
     text-align: center;
 }
 
 section {
-border: thick double #d984a2;;
-margin-bottom: 30px;
-width: 50%;
+    border: thick double #d984a2;
+    ;
+    margin-bottom: 30px;
+    width: 50%;
 }
 
 button {
-height: 36px;
-border: none;
-border-radius: 5px;
-color: #4a2c42;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    color: #4a2c42;
 
 }
 
 button:hover {
     cursor: pointer;
-   background-color: #e2a9c3;
+    background-color: #e2a9c3;
 
 }
-#projeto1, #projeto2 {
-padding: 10px 20px;
-line-height: auto;
-position: relative;
+
+#projeto1,
+#projeto2 {
+    padding: 10px 20px;
+    line-height: auto;
+    position: relative;
 }
 
 #formulario {
-display: flex;
-flex-wrap: wrap;
-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 #notas {
-display: flex;
-width: 100%;
-justify-content: space-around;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
-#btnSituacao{
-width: 300px;
+#btnSituacao {
+    width: 300px;
 }
 
 #content {
-display: flex;
-gap: 20px;
-margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
 }
 
 #contentCalcMedias {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .nota {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputCalc {
-width: 110px;
-height: 30px;
-border: none;
-outline-color: #d984a2;
+    width: 110px;
+    height: 30px;
+    border: none;
+    outline-color: #d984a2;
 }
 
 .buttonCalc {
-width: 110px;
+    width: 110px;
 }
 
 .buttonReset {
@@ -124,14 +128,14 @@ width: 110px;
 }
 
 .resultado {
-margin-top: 0;
+    margin-top: 0;
 }
 
-.inputNota{
-width: 80px;
-height: 36px;
-border: none;
-outline-color: #d984a2;
+.inputNota {
+    width: 80px;
+    height: 36px;
+    border: none;
+    outline-color: #d984a2;
 }
 
 .footer div {
@@ -153,9 +157,11 @@ outline-color: #d984a2;
     font-weight: 900;
     text-decoration: none;
 }
+
 .footer a:hover {
     text-decoration: underline;
 }
+
 /* Mobile */
 
 @media (max-width: 1023px) {
@@ -168,14 +174,17 @@ outline-color: #d984a2;
         flex-direction: column;
     }
 
-    #projeto1, #projeto2 {
+    #projeto1,
+    #projeto2 {
         padding: 10px;
         text-align: center;
     }
 
-    .inputCalc, .inputNota  {
+    .inputCalc,
+    .inputNota {
         width: 60px;
     }
+
     section {
         width: initial;
     }
