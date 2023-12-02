@@ -38,9 +38,8 @@ text-align: "left";
 color: #4a2c42;
 }
 
-.project-description {
+p#situacaoAluno, .project-description {
     text-align: center;
-
 }
 
 section {
@@ -59,7 +58,7 @@ color: #4a2c42;
 
 button:hover {
     cursor: pointer;
-    background-color: #e2a9c3;
+   background-color: #e2a9c3;
 
 }
 #projeto1, #projeto2 {
